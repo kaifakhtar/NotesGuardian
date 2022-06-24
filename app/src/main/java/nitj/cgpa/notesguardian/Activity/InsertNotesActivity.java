@@ -65,7 +65,7 @@ public class InsertNotesActivity extends AppCompatActivity {
         notes1.notesPriority=priority;
         notes1.notesDate=sequence.toString();
         notesViewModel.insertNote(notes1);
-        Toast.makeText(this,"Note created succesfully !",Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,"Note created!",Toast.LENGTH_SHORT).show();
         finish();
     }
 }

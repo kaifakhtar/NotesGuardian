@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -30,9 +31,11 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(MainActivity.this, InsertNotesActivity.class));
         });
         notesViewModel.getAllNotes.observe(this,notes -> {
-            notesRecyclerView.setLayoutManager(new GridLayoutManager(this,2));
+            GridLayoutManager gridLayoutManager=new GridLayoutManager(this,2);
+            notesRecyclerView.setLayoutManager(gridLayoutManager);
             notesAdapter=new NotesAdapter(MainActivity.this,notes);
             notesRecyclerView.setAdapter(notesAdapter);
+            notesRecyclerView.setHasFixedSize(true);
         });
     }
 }

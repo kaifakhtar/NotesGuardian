@@ -14,38 +14,44 @@
         android:orientation="vertical">
 
         <EditText
+            android:id="@+id/updateTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Title..."
-            android:background="@drawable/edit_text_background"
-            android:padding="15dp"
             android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
-            android:layout_marginRight="16dp">
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/edit_text_background"
+            android:fontFamily="@font/mont_light"
+            android:hint="Title..."
+            android:padding="15dp">
+
         </EditText>
 
         <EditText
+            android:id="@+id/updatesubTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Subtitle..."
-            android:background="@drawable/edit_text_background"
-            android:padding="15dp"
             android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
-            android:layout_marginRight="16dp">
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/edit_text_background"
+            android:fontFamily="@font/mont_light"
+            android:hint="Subtitle..."
+            android:padding="15dp">
+
         </EditText>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
             android:gravity="center_vertical">
 
             <TextView
@@ -53,41 +59,51 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginLeft="10dp"
-                android:textColor="@color/black"
                 android:layout_marginRight="10dp"
-                android:text="Priority"/>
+                android:fontFamily="@font/montes_black_italic"
+                android:text="Priority"
+                android:textColor="@color/black" />
 
             <ImageView
+                android:id="@+id/greenPriority"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_margin="10dp"
-                android:background="@drawable/red_shape"
-                android:src="@drawable/ic_baseline_done_24"/>
+                android:background="@drawable/green_shape" />
+
+
             <ImageView
+                android:id="@+id/yellowPriority"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_margin="10dp"
-                android:background="@drawable/yellow_shape"/>
+                android:background="@drawable/yellow_shape" />
+
             <ImageView
+                android:id="@+id/redPriority"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_margin="10dp"
-                android:background="@drawable/green_shape"/>
+                android:background="@drawable/red_shape" />
+
 
         </LinearLayout>
 
         <EditText
+            android:id="@+id/updateNoteTextBox"
             android:layout_width="match_parent"
             android:layout_height="300dp"
-            android:hint="Note..."
-            android:background="@drawable/edit_text_background"
-            android:padding="15dp"
-            android:gravity="start"
             android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
-            android:layout_marginRight="16dp">
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/edit_text_background"
+            android:fontFamily="@font/mont_light"
+            android:gravity="start"
+            android:hint="Note..."
+            android:padding="15dp">
+
         </EditText>
 
     </LinearLayout>
