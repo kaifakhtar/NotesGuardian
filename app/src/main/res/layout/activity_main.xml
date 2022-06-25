@@ -11,17 +11,21 @@
         android:id="@+id/notesRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentTop="true"/>
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/addNoteButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_margin="26dp"
+        android:text="Add note"
+        android:gravity="end"
+        app:iconTint="@color/white"
+        android:textColor="@color/white"
         android:backgroundTint="@color/red"
         android:clickable="true"
-        android:src="@drawable/note_add_24" />
+        app:icon="@drawable/note_add_24" />
 </RelativeLayout>
