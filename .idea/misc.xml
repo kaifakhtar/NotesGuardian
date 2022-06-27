@@ -14,12 +14,13 @@
         <entry key="..\:/Users/kaif akhtar/AndroidStudioProjects/NotesGuardian/app/src/main/res/drawable/yellow_shape.xml" value="0.158" />
         <entry key="..\:/Users/kaif akhtar/AndroidStudioProjects/NotesGuardian/app/src/main/res/drawable/yes_button.xml" value="0.1" />
         <entry key="..\:/Users/kaif akhtar/AndroidStudioProjects/NotesGuardian/app/src/main/res/layout/activity_insert_notes.xml" value="0.25" />
-        <entry key="..\:/Users/kaif akhtar/AndroidStudioProjects/NotesGuardian/app/src/main/res/layout/activity_main.xml" value="0.21851851851851853" />
+        <entry key="..\:/Users/kaif akhtar/AndroidStudioProjects/NotesGuardian/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/kaif akhtar/AndroidStudioProjects/NotesGuardian/app/src/main/res/layout/activity_splash.xml" value="0.264" />
         <entry key="..\:/Users/kaif akhtar/AndroidStudioProjects/NotesGuardian/app/src/main/res/layout/activity_update_notes.xml" value="0.25" />
         <entry key="..\:/Users/kaif akhtar/AndroidStudioProjects/NotesGuardian/app/src/main/res/layout/delete_bottom_sheet.xml" value="0.25" />
         <entry key="..\:/Users/kaif akhtar/AndroidStudioProjects/NotesGuardian/app/src/main/res/layout/inivisual_display_note.xml" value="0.25" />
-        <entry key="..\:/Users/kaif akhtar/AndroidStudioProjects/NotesGuardian/app/src/main/res/menu/delete_menu.xml" value="0.1" />
+        <entry key="..\:/Users/kaif akhtar/AndroidStudioProjects/NotesGuardian/app/src/main/res/menu/delete_menu.xml" value="0.264" />
+        <entry key="..\:/Users/kaif akhtar/AndroidStudioProjects/NotesGuardian/app/src/main/res/menu/main_act_menu.xml" value="0.24635416666666668" />
       </map>
     </option>
   </component>

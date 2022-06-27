@@ -7,12 +7,45 @@
     android:background="#E8E8E8"
     tools:context=".MainActivity">
 
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chip_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:singleSelection="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/unfilter_chip"
+            style="@style/Filter_chip_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:checked="true"
+            android:text="Unfiltered "
+            android:textSize="12dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/high_to_low_chip"
+            style="@style/Filter_chip_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="High to low"
+            android:textSize="12dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/low_to_high_chip"
+            style="@style/Filter_chip_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Low to high"
+            android:textSize="12dp" />
+
+    </com.google.android.material.chip.ChipGroup>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/notesRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentBottom="true" />
+        android:layout_below="@id/chip_group" />
 
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/addNoteButton"

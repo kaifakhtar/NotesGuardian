@@ -14,6 +14,8 @@ public class NotesRepository {
 
     public NotesDao notesDao;
     public LiveData<List<Notes>> getallNotes;
+    public LiveData<List<Notes>> highTolow;
+    public LiveData<List<Notes>> lowTohigh;
 
 
 
@@ -21,6 +23,8 @@ public class NotesRepository {
         NotesDatabase database=NotesDatabase.getDatabaseInstance(application);
         notesDao=database.notesDao();
         getallNotes=notesDao.getallNotes();
+        highTolow=notesDao.highToLow();
+        lowTohigh=notesDao.lowToHigh();
     }
     public void insertNotes(Notes notes){
         notesDao.insertNotes(notes);
