@@ -6,6 +6,15 @@ import androidx.room.PrimaryKey;
 
 @Entity(tableName ="Notes_Database")
 public class Notes {
+ boolean isDroped=false;
+
+    public boolean isDroped() {
+        return isDroped;
+    }
+
+    public void setDroped(boolean droped) {
+        isDroped = droped;
+    }
 
     @PrimaryKey(autoGenerate = true)
     public int id;
